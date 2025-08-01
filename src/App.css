@@ -1,0 +1,50 @@
+/*
+ * Custom styles for the React application.
+ * Most styles are handled by Tailwind CSS classes.
+ * This file contains custom animations and scrollbar styles.
+ */
+
+/* Inter Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar for the chat container */
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-container::-webkit-scrollbar-track {
+    background: #f1f5f9; /* slate-100 */
+    border-radius: 10px;
+}
+.chat-container::-webkit-scrollbar-thumb {
+    background: #94a3b8; /* slate-400 */
+    border-radius: 10px;
+}
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* slate-500 */
+}
+
+/* Loading animation for bot typing indicator */
+.loading-animation span {
+    animation: dot-flicker 1.4s infinite ease-in-out both;
+}
+.loading-animation span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+.loading-animation span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+.loading-animation span:nth-child(3) {
+    animation-delay: 0s;
+}
+@keyframes dot-flicker {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1.0);
+    }
+}
