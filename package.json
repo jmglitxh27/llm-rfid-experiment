@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "fft.js": "^4.0.4",
     "groq-sdk": "^0.29.0",
     "lucide-react": "^0.535.0",
+    "papaparse": "^5.5.3",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
